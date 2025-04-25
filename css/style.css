@@ -1,0 +1,1286 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Gramatika-Medium';
+    src: url('../font/gramatika_medium.ttf') format('opentype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../font/Inter-Regular.otf') format('opentype');
+    font-weight: 0;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gramatika-Regular';
+    src: url(../font/gramatika_regular.ttf) format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gramatika-Bold';
+    src: url(../font/gramatika_bold.ttf) format(opentype);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gramatika-Light';
+    src: url(../font/gramatika_light.ttf) format(opentype);
+    font-weight: 100;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Gramatika-Medium';
+    font-weight: 500;
+    line-height: 120%;
+}
+
+
+
+header {
+    width: 100%;
+    height: 74px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 55px;
+    rotate: 180deg;
+    ;
+}
+
+.left {
+    display: flex;
+    gap: 15px;
+    color: white;
+    font-family: 'Gramatika-Medium';
+    font-size: 12px;
+    list-style: 140%;
+
+}
+
+
+.container {
+    width: 1180px;
+    max-width: 98%;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    flex-direction: inherit;
+    align-items: inherit;
+    gap: inherit;
+}
+
+
+.right {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    gap: 20px;
+    align-items: center;
+    font-size: 21px;
+    font-family: 'Gramatika-Bold';
+}
+
+.right ul {
+    font-family: 'Gramatika-Medium';
+    color: #53DB4D;
+    font-size: 12px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.icon-phone {
+    display: flex;
+    gap: 10px;
+    width: 206px;
+    color: #E1E1E1;
+}
+
+.icon-phone img {
+    width: 12px;
+    min-height: 13px;
+    transform: scale(1.2);
+    align-items: center;
+}
+
+.zvonok {
+    width: 165px;
+    height: 34px;
+    border-radius: 10px;
+    background-color: yellow;
+    font-family: 'Gramatika-Medium';
+    margin-left: 20px;
+    white-space: nowrap;
+    font-size: 12px;
+    align-self: center;
+    text-transform: uppercase;
+}
+
+main {
+    width: 100%;
+    min-height: 962px;
+    background-image: url(../img/main-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 143px;
+}
+
+main .container {
+    position: relative;
+}
+
+main h1 {
+    font-size: 48px;
+    color: #DEDEDE;
+    font-family: 'Gramatika-Medium';
+    max-width: 715px;
+    height: 174px;
+
+    line-height: 120%;
+}
+
+.advantages {
+    margin-top: 55px;
+    color: #DEDEDE;
+    font-family: 'Inter';
+
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    gap: 15px;
+}
+
+.advantages .item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* Расстояние между иконкой и текстом */
+    margin-bottom: 20px;
+    /* Отступ между строками */
+}
+
+/* Общие стили для всех иконок */
+.icon-obrazec,
+.icon-auto,
+.icon-usl,
+.icon-standard {
+    flex-shrink: 0;
+    /* Предотвращает сжатие иконок */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon-obrazec {
+    width: 32px;
+    height: 45px;
+    background-image: url(../img/obrazec.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.icon-auto {
+    width: 33px;
+    height: 30px;
+    background-image: url(../img/auto.svg);
+    background-repeat: no-repeat;
+}
+
+.icon-usl {
+    width: 31px;
+    height: 31px;
+    background-image: url(../img/usl.svg);
+    background-repeat: no-repeat;
+}
+
+.icon-standard {
+    width: 23px;
+    height: 43px;
+    background-image: url(../img/standard.svg);
+    background-repeat: no-repeat;
+}
+
+.cost {
+    width: 268px;
+    height: 61px;
+    border-radius: 10px;
+    margin-top: 45px;
+    background-color: yellow;
+    font-family: 'Gramatika-Bold';
+    white-space: nowrap;
+    font-size: 14px;
+    align-self: center;
+    position: relative;
+    text-transform: uppercase;
+
+
+}
+
+#about {
+    width: 100%;
+    min-height: 1201px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+#about .container h1 {
+    font-family: 'Gramatika-Medium';
+    line-height: 120%;
+    font-size: 48px;
+}
+
+#about img {
+    color: black;
+    /* margin-top: -45px; */
+    width: 100%;
+}
+
+body section:nth-child(3n),
+#about {
+    background-image: url(../img/phon-about.svg);
+}
+
+section:nth-child(2n) {
+    background: #1C2533;
+    color: #DEDEDE;
+    background-image: url(../img/image\ 9.jpg);
+}
+
+section:nth-child(odd):after {
+
+    height: 120px;
+    background-image: url(../img/perehod.svg);
+
+    width: 100%;
+    right: 0;
+    left: 0;
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: -44px;
+    z-index: 3;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section:nth-child(5):after {
+    background-image: url('../img/perehod-white.svg');
+}
+
+
+section {
+    padding: 63px 0;
+    min-height: 600px;
+    position: relative;
+}
+
+section h2 {
+    font-size: 48px;
+    font-family: 'Gramatika-Medium';
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+#about .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 20px;
+    margin-top: 10px;
+
+}
+
+
+#about .container img {
+    width: 100%;
+}
+
+#about .container .text {
+    font-family: 'Gramatika-Regular';
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 580px;
+    height: 315px;
+    text-align: left;
+}
+
+#about .container .cell {
+    display: flex;
+    flex-direction: column;
+}
+
+#about .container .text ol {
+    margin-left: 21px;
+}
+
+#about .container .proizv {
+    font-family: 'Gramatika-Regular';
+    text-align: center;
+}
+
+#about .container .text p:nth-child(2) {
+    font-family: 'Gramatika-Medium';
+}
+
+#about .container .text p:nth-child(5) {
+    font-family: 'Gramatika-Medium';
+}
+
+#about .container .JQ {
+    font-family: 'Gramatika-Regular';
+}
+
+#about .container h4 {
+    text-align: center;
+}
+
+#about .container .DRC {
+    font-family: 'Gramatika-Regular';
+}
+
+#about .container h4 {
+    padding-top: 15px;
+}
+
+#lazer-tokar .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#lazer-tokar .container h4 {
+    text-align: center;
+    font-size: 24px;
+}
+
+
+#lazer-tokar .container p {
+    font-family: 'Gramatika-Regular';
+}
+
+#lazer-tokar .container p:first-of-type {
+    font-family: 'Gramatika-Medium';
+}
+
+#lazer-tokar .container .lazer p:last-of-type {
+    color: #A3A3A3;
+}
+
+#lazer-tokar .container .lazer {
+    width: 580px;
+    min-height: 857px;
+    border: solid;
+    border-width: 0.5px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 43px;
+    gap: 20px;
+}
+
+#lazer-tokar .container ul {
+    margin-left: 20px;
+    font-family: 'Gramatika-Regular';
+}
+
+#lazer-tokar .container li::marker {
+    font-size: 5px;
+}
+
+#lazer-tokar .container .tokar {
+    width: 580px;
+    min-height: 857px;
+    border: solid;
+    border-width: 0.5px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 43px;
+    gap: 20px;
+}
+
+.podrob1 {
+    width: 268px;
+    height: 61px;
+    border-radius: 10px;
+    background-color: yellow;
+    font-family: 'Gramatika-Bold';
+    white-space: nowrap;
+    font-size: 14px;
+    align-self: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.podrob2 {
+    width: 268px;
+    height: 61px;
+    border-radius: 10px;
+    background-color: yellow;
+    font-family: 'Gramatika-Bold';
+    white-space: nowrap;
+    font-size: 14px;
+    align-self: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+#prdetails h2 {
+    margin-bottom: 64px;
+}
+
+#prdetails .container {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#prdetails .container .details {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 122px;
+}
+
+#prdetails .container .down {
+    max-width: 432px;
+    text-align: center;
+    font-family: 'Gramatika-Medium';
+    font-size: 18px;
+}
+
+
+#dovertes {
+    background-image: url(../img/image\ 14.jpg) !important;
+}
+
+#dovertes .container {
+    display: flex;
+    align-items: center;
+    gap: 201px;
+}
+
+#dovertes .text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-shrink: 0;
+    width: 433px;
+}
+
+#dovertes .icon-aproved {
+    background-image: url(../img/aproved.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    padding-left: 40px;
+    font-family: 'Inter';
+    font-size: 16px;
+
+}
+
+
+.swiper {
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+    overflow: hidden;
+    padding: 0 40px;
+}
+
+
+.swiper-slide .review {
+    opacity: 0.4;
+    transform: scale(0.8);
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-slide-active .review {
+    opacity: 1;
+    transform: scale(1);
+
+}
+
+/* кнопочки пагинации */
+span.swiper-pagination-bullet {
+    background-color: #0071FF;
+    border-radius: 3px;
+    width: 6px;
+    height: 6px;
+    margin: 0 3px !important;
+
+}
+
+.swiper-pagination {
+    bottom: 10px !important;
+}
+
+.swiper-wrapper {
+    min-height: 500px;
+    padding-bottom: 50px;
+}
+
+.zayvka {
+    width: 268px;
+    height: 61px;
+    margin-top: 5px;
+    margin-left: 40px;
+    border-radius: 10px;
+    background-color: yellow;
+    font-family: 'Gramatika-Bold';
+    white-space: nowrap;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+#variants .options-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 74px;
+}
+
+#variants .container .chertezh {
+    width: 350px;
+    height: 600px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 21px;
+    background-image: url(../img/bg-variants.jpg);
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/bg-variants.jpg);
+    background-size: cover;
+    padding: 12px;
+}
+
+#variants .container h4 {
+    font-size: 24px;
+}
+
+#variants .container .obrazec img:first-of-type {
+    padding-top: 51px;
+}
+
+
+
+#variants .container p:first-of-type {
+    text-align: center;
+    font-family: 'Gramatika-Medium';
+}
+
+#variants .container p {
+    width: 314px;
+    text-align: center;
+    font-family: 'Gramatika-Regular';
+    margin-bottom: 23px;
+
+}
+
+#variants .container .obrazec {
+    width: 350px;
+    height: 600px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-image: url(../img/bg-variants.jpg);
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/bg-variants.jpg);
+    background-size: cover;
+    padding: 12px;
+}
+
+#variants .container .uslugi {
+    width: 350px;
+    height: 600px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-image: url(../img/bg-variants.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/bg-variants.jpg);
+    background-size: cover;
+    padding: 12px;
+}
+
+#variants .examples-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 44px;
+    column-gap: 21px;
+    justify-content: center;
+}
+
+#variants .examples-container img {
+    width: 280px;
+}
+
+#contacts .container {
+    display: flex;
+    gap: 21px;
+}
+
+#contacts .container h4 {
+    font-size: 24px;
+    padding-bottom: 25px;
+}
+
+#contacts .container .map {
+    width: 663px;
+    height: 489px;
+}
+
+#contacts .container .forma {
+    width: 428px;
+    height: 533px;
+    border: solid;
+    border-radius: 20px;
+    border-width: 0.5px;
+    color: #DEDEDE;
+    font-family: 'Gramatika-Regular';
+    display: flex;
+    flex-direction: column;
+    padding-top: 45px;
+    padding-left: 52px;
+    padding-right: 26px;
+
+}
+
+
+.form-line {
+    width: 326px;
+    padding: 12px 0;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    background: transparent;
+    outline: none;
+    transition: border-color 0.3s ease;
+    color: white;
+    font-family: 'Gramatika-Light';
+    font-style: oblique;
+}
+
+/* .form-line:focus {
+    border-bottom: 2px solid #4CAF50;
+} */
+
+/* Для текстовых областей */
+.form-line.textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.checkmark {
+    font-family: 'Gramatika-Light';
+    font-size: 10px;
+}
+
+.posetite {
+    width: 268px;
+    height: 61px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    background-color: yellow;
+    font-family: 'Gramatika-Bold';
+    white-space: nowrap;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+footer {
+    width: 100%;
+    height: 74px;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-image: url(../img/image\ 7.jpg);
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    color: white;
+
+}
+
+.modal-content::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    /* выходит за границы на 5px */
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 0.5px solid white;
+    border-radius: 12px;
+    /* чуть больше, чем у основного элемента */
+    pointer-events: none;
+    /* чтобы не перекрывать клики */
+}
+
+.modal-content h2 {
+    text-transform: uppercase;
+    font-family: 'Gramatika-Medium';
+    font-size: 24px;
+    color: #DEDEDE
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.callback-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    font-family: 'Gramatika-Regular';
+    font-size: 14px;
+
+
+}
+
+
+
+
+.callback-form input {
+    width: 300px;
+    padding: 12px 0;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 0.5px solid #ddd;
+    font-size: 16px;
+    background: transparent;
+    outline: none;
+    transition: border-color 0.3s ease;
+    color: white;
+    font-family: 'Gramatika-Light';
+    font-style: oblique;
+}
+
+
+button[type="submit"] {
+    width: 268px;
+    height: 61px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    background-color: yellow;
+    font-family: 'Gramatika-Bold';
+    white-space: nowrap;
+    font-size: 14px;
+    text-transform: uppercase;
+    align-self: center;
+}
+
+.agree-checkbox2 {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Мобильная адаптация */
+@media (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+
+    #about .container {
+        grid-template-columns: 1fr;
+    }
+
+    #lazer-tokar .container {
+        flex-direction: column;
+    }
+
+    #lazer-tokar .container .lazer,
+    #lazer-tokar .container .tokar {
+        width: 100%;
+    }
+
+    #prdetails .container .details {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+    }
+
+    #dovertes .container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .swiper {
+        max-width: 100%;
+    }
+
+    #dovertes .text {
+        width: 100%;
+    }
+
+    .zayvka {
+        margin-left: 0;
+        align-self: center;
+    }
+}
+
+@media (max-width: 992px) {
+    #variants .options-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #variants .examples-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #contacts .container {
+        flex-direction: column;
+    }
+
+    #contacts .container .map,
+    #contacts .container .forma {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+        height: 400px;
+    }
+
+    .form-line {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header .container,
+    footer .container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    .left,
+    .right {
+        align-items: center;
+        text-align: center;
+    }
+
+    .right {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    main h1 {
+        font-size: 32px;
+        height: auto;
+    }
+
+    section h2 {
+        font-size: 32px;
+    }
+
+    #about .container .text {
+        height: auto;
+    }
+
+    #prdetails .container .details {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .advantages {
+        width: 100%;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .callback-form input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+
+    main h1,
+    section h2 {
+        font-size: 28px;
+    }
+
+    #prdetails .container .details {
+        grid-template-columns: 1fr;
+    }
+
+    #variants .examples-container {
+        grid-template-columns: 1fr;
+    }
+
+    #variants .examples-container img {
+        width: 100%;
+    }
+
+    .icon-phone p {
+        font-size: 16px;
+    }
+
+    .zvonok {
+        margin-left: 0;
+    }
+
+    .advantages .item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section:nth-child(odd):after {
+        height: 60px;
+        bottom: -30px;
+    }
+}
+
+/* Улучшение читаемости на мобильных */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        line-height: 1.3;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    #lazer-tokar .container .lazer,
+    #lazer-tokar .container .tokar {
+        padding: 20px;
+    }
+
+    .podrob1,
+    .podrob2,
+    .cost,
+    .zayvka,
+    .posetite,
+    button[type="submit"] {
+        width: 100%;
+        max-width: 300px;
+        height: 50px;
+        font-size: 12px;
+    }
+}
+
+/* Гамбургер-меню для мобильных */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: none;
+        /* Скрываем обычное меню */
+    }
+
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .hamburger-menu span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: white;
+        margin: 4px 0;
+    }
+
+    /* Можно добавить JS для открытия/закрытия меню */
+}
+
+/* Header адаптация */
+@media (max-width: 1200px) {
+    header .container {
+        padding: 0 20px;
+    }
+
+
+    .icon-phone p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 992px) {
+    header .container {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .icon-phone {
+        width: auto;
+    }
+
+    .icon-phone p {
+        font-size: 16px;
+    }
+
+    .zvonok {
+        margin-left: 10px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 80px;
+    }
+
+    .left img {
+        width: 40px;
+    }
+
+    .left p {
+        font-size: 10px;
+        line-height: 1.2;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .icon-phone img {
+        width: 10px;
+    }
+
+    .icon-phone p {
+        font-size: 14px;
+    }
+
+    .zvonok {
+        width: 130px;
+        height: 30px;
+        font-size: 10px;
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    header .container {
+        padding: 0 10px;
+    }
+
+    .left {
+        gap: 8px;
+    }
+
+    .logo {
+        height: 30px;
+    }
+
+    .icon-phone p {
+        font-size: 12px;
+    }
+
+    .zvonok {
+        width: 110px;
+        font-size: 9px;
+        padding: 0 5px;
+    }
+}
+
+/* Footer адаптация */
+@media (max-width: 1200px) {
+    footer .container {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    footer .container {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        height: 80px;
+    }
+
+    footer .left img {
+        width: 40px;
+    }
+
+    footer .left p {
+        font-size: 10px;
+        line-height: 1.2;
+    }
+
+    footer .logo {
+        height: 40px;
+    }
+
+    footer .right {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    footer .icon-phone img {
+        width: 10px;
+    }
+
+    footer .icon-phone p {
+        font-size: 14px;
+    }
+
+    footer .zvonok {
+        width: 130px;
+        height: 30px;
+        font-size: 10px;
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    footer .container {
+        padding: 0 10px;
+    }
+
+    footer .left {
+        gap: 8px;
+    }
+
+    footer .logo {
+        height: 30px;
+    }
+
+    footer .icon-phone p {
+        font-size: 12px;
+    }
+
+    footer .zvonok {
+        width: 110px;
+        font-size: 9px;
+        padding: 0 5px;
+    }
+}
+
+/* Общие стили для сохранения пропорций */
+header,
+footer {
+    transition: all 0.3s ease;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    flex-shrink: 1;
+    min-width: 0;
+    /* Позволяет сжиматься */
+}
+
+.icon-phone {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.zvonok {
+    flex-shrink: 0;
+}
